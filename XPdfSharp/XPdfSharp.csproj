@@ -1,6 +1,6 @@
 <Project Sdk="Microsoft.NET.Sdk">
     <PropertyGroup>	
-		<TargetFrameworks>netcoreapp3.1;netstandard2.1</TargetFrameworks>		
+		<TargetFrameworks>net8.0</TargetFrameworks>		
 		<NuspecFile>XPdfSharp.nuspec</NuspecFile>		
         <GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<NoWarn>1591</NoWarn>				
