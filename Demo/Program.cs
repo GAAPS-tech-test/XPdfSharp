@@ -38,6 +38,22 @@ namespace Demo
                 var files = Directory.GetFiles("samples/images/");
                 Console.WriteLine("Image Count: {0}", files.Length);
             }
+
+            if (Directory.Exists("samples/html/"))
+                Directory.Delete("samples/html/", true);
+
+            using (var html = ToolsFactory.NewPdf2Html)
+            {
+                //html.Dpi = 75;
+                var result = await html.GenerateHTMLAsync("samples/sample.pdf", "samples/html/");
+
+                Console.WriteLine("Generated HTML success: {0} codeError: {1}", result == 0, result);
+                if (result != 0)
+                    return;
+
+                var files = Directory.GetFiles("samples/html/");
+                Console.WriteLine("Html Count: {0}", files.Length);
+            }
         }
     }
 }

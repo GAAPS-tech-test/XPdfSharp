@@ -13,7 +13,7 @@ using System.Diagnostics.CodeAnalysis;
 
 namespace XPdfSharp.Interface
 {
-    public interface IPdf2Html
+    public interface IPdf2Html : IDisposable
     {
 
         public string Suffix { get; set; }

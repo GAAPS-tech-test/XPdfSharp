@@ -40,6 +40,9 @@ namespace XPdfSharp.Implementation
 
             return await CustomProcess.RunProcessAsync(programName, fullArgs, workDir);
         }
+        public void Dispose()
+        {
+        }
 
         private List<string> ParseParameters()
         {
