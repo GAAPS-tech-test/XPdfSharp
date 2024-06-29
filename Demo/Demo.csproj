@@ -14,6 +14,15 @@
     </ItemGroup>
 
     <ItemGroup>
+      <None Update="samples\BKGCONF_NAM6832501.pdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="samples\BKGCONF_NAM6862034.pdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="samples\BKGCONF_NAM6884328.pdf">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
       <None Update="samples\sample.pdf">
         <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       </None>
