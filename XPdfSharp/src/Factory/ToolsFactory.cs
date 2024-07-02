@@ -14,5 +14,10 @@ namespace XPdfSharp.Factory
         /// Create a new instance of IPdf2Png capable of create PNG files from a PDF source
         /// </summary>
         public static IPdf2Png NewPdf2Png => new Pdf2Png();
+
+        /// <summary>
+        /// Create a new instance of IPdf2Html capable to create HTML files from a PDF.
+        /// </summary>
+        public static IPdf2Html NewPdf2Html => new Pdf2Html();
     }
 }
